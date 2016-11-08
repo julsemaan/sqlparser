@@ -574,17 +574,19 @@ type ComparisonExpr struct {
 
 // ComparisonExpr.Operator
 const (
-	AST_EQ       = "="
-	AST_LT       = "<"
-	AST_GT       = ">"
-	AST_LE       = "<="
-	AST_GE       = ">="
-	AST_NE       = "!="
-	AST_NSE      = "<=>"
-	AST_IN       = "in"
-	AST_NOT_IN   = "not in"
-	AST_LIKE     = "like"
-	AST_NOT_LIKE = "not like"
+	AST_EQ         = "="
+	AST_LT         = "<"
+	AST_GT         = ">"
+	AST_LE         = "<="
+	AST_GE         = ">="
+	AST_NE         = "!="
+	AST_NSE        = "<=>"
+	AST_IN         = "in"
+	AST_NOT_IN     = "not in"
+	AST_LIKE       = "like"
+	AST_NOT_LIKE   = "not like"
+	AST_REGEXP     = "regexp"
+	AST_NOT_REGEXP = "not regexp"
 )
 
 func (node *ComparisonExpr) Format(buf *TrackedBuffer) {

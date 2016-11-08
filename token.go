@@ -76,6 +76,7 @@ var keywords = map[string]int{
 	"key":           KEY,
 	"left":          LEFT,
 	"like":          LIKE,
+	"regexp":        REGEXP,
 	"limit":         LIMIT,
 	"lock":          LOCK,
 	"minus":         MINUS,
