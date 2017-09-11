@@ -62,6 +62,7 @@ var keywords = map[string]int{
 	"force":         FORCE,
 	"from":          FROM,
 	"group":         GROUP,
+	"has_words":     HAS_WORDS,
 	"having":        HAVING,
 	"if":            IF,
 	"ignore":        IGNORE,

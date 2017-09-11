@@ -587,6 +587,7 @@ const (
 	AST_NOT_LIKE   = "not like"
 	AST_REGEXP     = "regexp"
 	AST_NOT_REGEXP = "not regexp"
+	AST_HAS_WORDS  = "has_words"
 )
 
 func (node *ComparisonExpr) Format(buf *TrackedBuffer) {
