@@ -63,6 +63,7 @@ var keywords = map[string]int{
 	"from":          FROM,
 	"group":         GROUP,
 	"has_words":     HAS_WORDS,
+	"has_csv_word":  HAS_CSV_WORD,
 	"having":        HAVING,
 	"if":            IF,
 	"ignore":        IGNORE,

@@ -74,7 +74,7 @@ for CreateTable
 
 %token LEX_ERROR
 %token <empty> SELECT INSERT UPDATE DELETE FROM WHERE GROUP HAVING ORDER BY LIMIT FOR
-%token <empty> ALL DISTINCT AS EXISTS IN IS LIKE REGEXP BETWEEN NULL ASC DESC VALUES INTO DUPLICATE KEY DEFAULT SET LOCK HAS_WORDS
+%token <empty> ALL DISTINCT AS EXISTS IN IS LIKE REGEXP BETWEEN NULL ASC DESC VALUES INTO DUPLICATE KEY DEFAULT SET LOCK HAS_WORDS HAS_CSV_WORD
 %token <bytes> ID STRING NUMBER VALUE_ARG LIST_ARG COMMENT
 %token <empty> LE GE NE NULL_SAFE_EQUAL
 %token <empty> '(' '=' '<' '>' '~'
@@ -832,6 +832,10 @@ condition:
 | value_expression HAS_WORDS value_expression
   {
     $$ = &ComparisonExpr{Left: $1, Operator: AST_HAS_WORDS, Right: $3}
+  }
+| value_expression HAS_CSV_WORD value_expression
+  {
+    $$ = &ComparisonExpr{Left: $1, Operator: AST_HAS_CSV_WORD, Right: $3}
   }
 | value_expression BETWEEN value_expression AND value_expression
   {
