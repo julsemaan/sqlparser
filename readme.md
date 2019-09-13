@@ -15,7 +15,7 @@ It applies the same LICENSE as youtube/vitess.
 ##Usage
 
     import (
-        "github.com/xwb1989/sqlparser"
+        "github.com/julsemaan/sqlparser"
     )
 
 Then use

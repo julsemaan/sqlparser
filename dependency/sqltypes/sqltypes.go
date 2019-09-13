@@ -14,9 +14,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/xwb1989/sqlparser/dependency/bson"
-	"github.com/xwb1989/sqlparser/dependency/bytes2"
-	"github.com/xwb1989/sqlparser/dependency/hack"
+	"github.com/julsemaan/sqlparser/dependency/bson"
+	"github.com/julsemaan/sqlparser/dependency/bytes2"
+	"github.com/julsemaan/sqlparser/dependency/hack"
 )
 
 var (
